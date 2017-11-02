@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WikiViewer</title>
+    <style>
+        @import url("main.css")
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>WikiViewer</h1>
+    <img src="1024px-Wikipedia-logo-v2.svg.png" height="100px">
+    <div class='column'>
+        <div class='search'>
+            <div class='search_bar'>
+                <input id='searchOne' type='checkbox'>
+                <label for='searchOne'>
+          <i class='icon ion-android-search' id='aaa'></i>
+          <i class='last icon ion-android-close'></i>
+        </label>
+                <input placeholder='Type or click to get  any' type='text' class="searchBox">
+            </div>
+        </div>
+    </div>
+    <ul class="results">
+    </ul>
+    <script src="main.js"></script>
+</body>
+
+</html>

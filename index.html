@@ -13,21 +13,21 @@
 </head>
 
 <body>
-    <h1>WikiViewer</h1>
+    <h1 id="title">WikiViewer</h1>
     <img src="1024px-Wikipedia-logo-v2.svg.png" height="100px">
-    <div class='column'>
+    <div class='cont'>
         <div class='search'>
-            <div class='search_bar'>
-                <input id='searchOne' type='checkbox'>
-                <label for='searchOne'>
-          <i class='icon ion-android-search' id='aaa'></i>
-          <i class='last icon ion-android-close'></i>
+            <div class='searchT'>
+                <input id='searchTinside' type='checkbox'>
+                <label for='searchTinside'>
+          <i class='icon ion-android-search'></i>
+          <i class='last icon ion-android-close' id="X"></i>
         </label>
-                <input placeholder='Type or click to get  any' type='text' class="searchBox">
+                <input placeholder='Type or click to get  any' type='text' class="searchBox" id='intoTxt'>
             </div>
         </div>
     </div>
-    <ul class="results">
+    <ul class="res">
     </ul>
     <script src="main.js"></script>
 </body>

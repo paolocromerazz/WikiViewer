@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css);
+
 * {
     font-family: 'Special Elite', cursive;
-    color: #8b8b8b;
+    color: #303030;
 }
 
 body {
@@ -12,111 +13,98 @@ body {
     text-align: center;
 }
 
-body .column {
+body .cont {
     height: 5em;
     cursor: pointer;
     width: 100%;
     position: relative;
 }
 
-body .random span {
-    visibility: hidden;
-}
-
-body .random:hover {
-    cursor: pointer;
-}
-
-body .random:hover span {
-    visibility: visible;
-}
 
 body .search {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 40%;
     margin: auto;
     transform: translateY(-50%);
     width: 100%;
     overflow: hidden;
 }
 
-body .search_bar {
+body .searchT {
     width: 280px;
     position: relative;
     margin: 0 auto;
 }
 
-body .search_bar input[type="text"] {
+body .searchT input[type="text"] {
     width: 15px;
     background: transparent;
-    transition: border 0.3s 0s, width 0.2s 0.3s cubic-bezier(0.225, 0.01, 0.475, 1.01), text-indent 0.2s 0.3s;
+    //transition: border 0.3s 0s, width 0.2s 0.3s cubic-bezier(0.225, 0.01, 0.475, 1.01), text-indent 0.2s 0.3s;
     padding: 20px;
     border-color: #fafafa;
     text-indent: 30px;
     outline: none;
-    border: 0px solid #BBDEFB;
-    font-size: 16px;
+    font-size: 14px;
     color: #212121;
     border-radius: 8px;
 }
 
-body .search_bar ::-webkit-input-placeholder {
+body .searchT ::-webkit-input-placeholder {
     color: #adadad;
     font-weight: 400;
     font-family: 'Special Elite', sans-serif;
 }
 
-body .search_bar ::-moz-input-placeholder {
+body .searchT ::-moz-input-placeholder {
     color: #adadad;
     font-weight: 400;
     font-family: 'Special Elite', sans-serif;
 }
 
-body .search_bar ::-o-input-placeholder {
+body .searchT ::-o-input-placeholder {
     color: #adadad;
     font-weight: 400;
     font-family: 'Special Elite', sans-serif;
 }
 
-body .search_bar input[type="checkbox"] {
+body .searchT input[type="checkbox"] {
     display: none;
 }
 
-body .search_bar input[type="checkbox"]:checked + label + input {
+body .searchT input[type="checkbox"]:checked + label + input {
     width: 230px;
     border: 3px solid #bb2020;
     text-indent: 0px;
 }
 
-body .search_bar input[type="checkbox"]:checked + label i {
+body .searchT input[type="checkbox"]:checked + label i {
     right: 0px;
     transform: translateY(-50%) translateX(50%) rotate(360deg) scale(0);
     color: #202020;
 }
 
-body .search_bar input[type="checkbox"]:checked + label .last {
+body .searchT input[type="checkbox"]:checked + label .last {
     left: 220px;
     transform: translateY(-50%) rotate(360deg) scale(1);
 }
 
-body .search_bar input[type="checkbox"]:checked + label p {
+body .searchT input[type="checkbox"]:checked + label p {
     top: 50%;
     transition: all .3s .45s;
 }
 
-body .search_bar input[type="checkbox"]:not(checked) + label p {
+body .searchT input[type="checkbox"]:not(checked) + label p {
     top: -50%;
     transition: all .3s 0s;
 }
 
-body .search_bar .last {
-    -webkit-transform: translateY(-50%) rotate(0deg) scale(0);
+body .searchT .last {
     transform: translateY(-50%) rotate(0deg) scale(0);
 }
 
-body .search_bar i {
+body .searchT i {
     position: absolute;
     font-size: 30px;
     top: 50%;
@@ -124,7 +112,7 @@ body .search_bar i {
     cursor: pointer;
     z-index: 2;
     margin: auto;
-    border-radius: 4px;
+    border-radius: 8px;
     width: 56px;
     right: 50%;
     height: 54px;
@@ -134,11 +122,11 @@ body .search_bar i {
     color: #703030;
 }
 
-body .search_bar i:hover {
+body .searchT i:hover {
     color: red;
 }
 
-body .search_bar p {
+body .searchT p {
     position: absolute;
     margin: 0;
     right: 52px;
@@ -159,7 +147,7 @@ ul {
 ul li {
     background: linear-gradient(160deg, #c8c8c8, #d4d4d4);
     border-radius: 8px;
-    padding: 1em 2em;
+    padding: 1em 1em;
     margin-bottom: 2em;
 }
 
